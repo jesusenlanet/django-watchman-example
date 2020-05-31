@@ -7,3 +7,9 @@ docker-compose build
 docker-compose up -d
 docker-compose logs -f
 ```
+
+If you read something like:
+
+`Watching for file changes with StatReloader`
+
+Try with a higher value for the `DJANGO_WATCHMAN_TIMEOUT` variable in the `docker-compose.yml` file.
